@@ -1,0 +1,17 @@
+{
+  "name": "express-html-minifier-terser-handlebars-example",
+  "version": "0.0.1",
+  "description": "Handlebars.js example for this middleware",
+  "main": "handlebars-example.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node handlebars-example.js"
+  },
+  "author": "Relisiuol <contact@relisiuol.fr>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.13.3",
+    "express-handlebars": "^7.0.7"
+  }
+}

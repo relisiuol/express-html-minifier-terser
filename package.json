@@ -1,0 +1,42 @@
+{
+  "name": "express-html-minifier-terser",
+  "version": "0.1.0",
+  "description": "Express middleware around HTML minifier",
+  "main": "minifier.js",
+  "type": "module",
+  "scripts": {
+    "test": "node tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/relisiuol/express-html-minifier-terser.git"
+  },
+  "keywords": [
+    "express",
+    "html",
+    "minifier",
+    "middleware",
+    "minify"
+  ],
+  "author": "relisiuol <contact@relisiuol.fr>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/relisiuol/express-html-minifier-terser/issues"
+  },
+  "homepage": "https://github.com/relisiuol/express-html-minifier-terser#readme",
+  "dependencies": {
+    "html-minifier-terser": "7.2.0",
+    "lodash.merge": "4.6.2"
+  },
+  "devDependencies": {
+    "ejs": "3.1.9",
+    "express": "4.18.2",
+    "express-handlebars": "7.0.7",
+    "handlebars": "4.7.7",
+    "nunjucks": "3.2.4",
+    "pug": "3.0.2",
+    "supertest": "6.3.3",
+    "tape": "5.6.3",
+    "url": "0.11.1"
+  }
+}
