@@ -1,5 +1,9 @@
 # express-html-minifier-terser
-Express middleware wrapper around HTML minifier
+
+[![NPM version](https://img.shields.io/npm/v/express-html-minifier-terser.svg)](https://www.npmjs.com/package/express-html-minifier-terser)
+[![Build Status](https://github.com/relisiuol/express-html-minifier-terser/workflows/CI/badge.svg)](https://github.com/relisiuol/express-html-minifier-terser/actions?workflow=CI)
+
+Express middleware wrapper around [HTML minifier](https://github.com/terser/html-minifier-terser)
 
 ## Description
 
@@ -12,7 +16,6 @@ npm install --save --production express-html-minifier-terser express
 ```
 
 ```js
-
 var express    = require('express');
 var HTMLMinifier = require('express-html-minifier-terser');
 
@@ -38,9 +41,9 @@ app.get('hello', function (req, res, next) {
         res.send(html);
     })
 });
-
 ```
-Set 'override' to false if you don't want to hijack the ordinary res.render function. This adds an additional res.renderMin function to the response object to render minimized HTML. 
+
+Set 'override' to false if you don't want to hijack the ordinary res.render function. This adds an additional res.renderMin function to the response object to render minimized HTML.
 
 The 'htmlMinifier' opts are simply passed on to the html-minifier-terser plugin. For all the available configuration options, see [the original repo!](https://github.com/terser/html-minifier-terser/#options-quick-reference)
 

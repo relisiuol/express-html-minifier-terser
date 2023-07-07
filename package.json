@@ -1,16 +1,12 @@
 {
   "name": "express-html-minifier-terser",
-  "version": "0.1.0",
   "description": "Express middleware around HTML minifier",
-  "main": "minifier.js",
-  "type": "module",
-  "scripts": {
-    "test": "node tests"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/relisiuol/express-html-minifier-terser.git"
-  },
+  "version": "1.0.1",
+  "license": "MIT",
+  "repository": "https://github.com/relisiuol/express-html-minifier-terser.git",
+  "bugs": "https://github.com/relisiuol/express-html-minifier-terser/issues",
+  "homepage": "https://github.com/relisiuol/express-html-minifier-terser#readme",
+  "author": "relisiuol <contact@relisiuol.fr>",
   "keywords": [
     "express",
     "html",
@@ -18,25 +14,82 @@
     "middleware",
     "minify"
   ],
-  "author": "relisiuol <contact@relisiuol.fr>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/relisiuol/express-html-minifier-terser/issues"
+  "engines": {
+    "node": "^14.13.1 || >=16.0.0"
   },
-  "homepage": "https://github.com/relisiuol/express-html-minifier-terser#readme",
+  "type": "module",
+  "module": "minifier.js",
+  "exports": {
+    ".": {
+      "import": "./minifier.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "minifier.js"
+  ],
+  "scripts": {
+    "lint": "eslint . --ignore-path .gitignore",
+    "prepare": "is-ci || husky install",
+    "test": "node tests"
+  },
   "dependencies": {
     "html-minifier-terser": "7.2.0",
     "lodash.merge": "4.6.2"
   },
   "devDependencies": {
+    "@commitlint/cli": "17.6.6",
+    "commitlint-config-non-conventional": "1.0.1",
     "ejs": "3.1.9",
+    "eslint": "8.44.0",
+    "eslint-config-standard": "17.1.0",
     "express": "4.18.2",
     "express-handlebars": "7.0.7",
     "handlebars": "4.7.7",
+    "husky": "8.0.3",
+    "is-ci": "3.0.1",
+    "lint-staged": "13.2.3",
     "nunjucks": "3.2.4",
     "pug": "3.0.2",
     "supertest": "6.3.3",
-    "tape": "5.6.3",
+    "tape": "5.6.4",
     "url": "0.11.1"
+  },
+  "commitlint": {
+    "extends": "non-conventional"
+  },
+  "eslintConfig": {
+		"root": true,
+    "extends": "standard",
+    "rules": {
+      "semi": [
+        "error",
+        "always"
+      ],
+      "semi-spacing": "error",
+      "space-before-function-paren": [
+        "error",
+        {
+          "anonymous": "always",
+          "named": "never",
+          "asyncArrow": "always"
+        }
+      ]
+    },
+    "overrides": [
+      {
+        "files": [
+          "src/*.js",
+          "assets/*.js",
+          "tests/*.js"
+        ],
+        "env": {
+          "browser": true
+        }
+      }
+    ]
+  },
+  "lint-staged": {
+    "*.{js,cjs}": "eslint --fix --ignore-path .gitignore"
   }
 }
