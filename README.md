@@ -1,7 +1,8 @@
 # express-html-minifier-terser
 
-[![NPM version](https://img.shields.io/npm/v/express-html-minifier-terser.svg)](https://www.npmjs.com/package/express-html-minifier-terser)
-[![Build Status](https://github.com/relisiuol/express-html-minifier-terser/workflows/CI/badge.svg)](https://github.com/relisiuol/express-html-minifier-terser/actions?workflow=CI)
+[![Version](https://img.shields.io/npm/v/express-html-minifier-terser.svg)](https://www.npmjs.com/package/express-html-minifier-terser)
+[![Status](https://github.com/relisiuol/express-html-minifier-terser/workflows/CI/badge.svg)](https://github.com/relisiuol/express-html-minifier-terser/actions?workflow=CI)
+[![Downloads](https://img.shields.io/npm/dm/express-html-minifier-terser.svg)](https://www.npmjs.com/package/express-html-minifier-terser)
 
 Express middleware wrapper around [HTML minifier](https://github.com/terser/html-minifier-terser)
 
@@ -71,6 +72,3 @@ Full examples can naturally be found under the 'examples'-folder of this reposit
 ## License
 
 MIT © [relisiuol](https://relisiuol.fr)
-
-[![npm version](https://badge.fury.io/js/express-html-minifier-terser.svg)](https://badge.fury.io/js/express-html-minifier-terser)
-[![npm downloads](https://img.shields.io/npm/dm/express-html-minifier-terser.svg)](https://img.shields.io/npm/dm/express-html-minifier-terser.svg)
