@@ -62,7 +62,7 @@
     "pug": "3.0.2",
     "rollup": "4.9.2",
     "rollup-plugin-polyfill-node": "0.13.0",
-    "supertest": "6.3.3",
+    "supertest": "6.3.4",
     "tape": "5.7.2",
     "url": "0.11.3"
   },
