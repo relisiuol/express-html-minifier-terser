@@ -63,7 +63,7 @@
     "rollup": "4.9.2",
     "rollup-plugin-polyfill-node": "0.13.0",
     "supertest": "6.3.3",
-    "tape": "5.7.2",
+    "tape": "5.7.3",
     "url": "0.11.3"
   },
   "commitlint": {
