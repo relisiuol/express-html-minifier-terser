@@ -43,7 +43,7 @@
     "lodash.merge": "4.6.2"
   },
   "devDependencies": {
-    "@commitlint/cli": "18.4.3",
+    "@commitlint/cli": "19.2.1",
     "@rollup/plugin-commonjs": "25.0.7",
     "@rollup/plugin-json": "6.1.0",
     "@rollup/plugin-node-resolve": "15.2.3",
